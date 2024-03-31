@@ -16,14 +16,16 @@ Automatic mode provides customization options:
 - `threshold`: What is used to determine whether a component should be converted to Million.js.
   When the threshold increases, fewer components will be optimized, and vice versa.
 - `skip`: An array of identifiers to indicate if a component should be skipped. You can add hook or variable names, function names, etc.
+- `rsc`: If you're using React Server Components, set this to `true` to enable RSC support.
 
 The `auto` object lets you configure options beyond the default ones set during installation:
 
 ```js
 auto: {
   threshold: 0.05, // default: 0.1,
-  skip: ['useBadHook', /badVariable/g], // default []
-}
+  skip: ["useBadHook", /badVariable/g], // default []
+  rsc: true, // default value is false
+};
 ```
 
 <Tabs items={['Next.js', 'Astro', 'Gatsby', 'Vite', 'Remix', 'Create React App', 'Webpack', 'Rollup']} storageKey="selected-bundler-compiler">
