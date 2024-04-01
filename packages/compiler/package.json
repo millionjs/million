@@ -8,7 +8,8 @@
     "@types/babel__core": "^7.20.5",
     "@types/babel__generator": "^7.6.8",
     "@types/babel__helper-module-imports": "^7.18.3",
-    "@types/which-pm-runs": "^1.0.2"
+    "@types/which-pm-runs": "^1.0.2",
+    "next": "^14.1.4"
   },
   "dependencies": {
     "ci-info": "^4.0.0",

@@ -1,4 +1,5 @@
 import { existsSync } from 'node:fs';
+import type { NextConfig } from 'next';
 import { babel } from './babel';
 import type { Options } from './plugin';
 import { unplugin } from './plugin';
@@ -9,11 +10,7 @@ export const rollup = unplugin.rollup;
 export const rspack = unplugin.rspack;
 export const esbuild = unplugin.esbuild;
 export const next = (
-  nextConfig: {
-    appDir?: boolean;
-    basePath?: string;
-    webpack?: (config: Record<string, any>, options: any) => any;
-  } = {},
+  nextConfig: NextConfig = {},
   overrideOptions: Options = {},
 ): any => {
   const millionConfig: Options = {
