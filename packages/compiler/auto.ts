@@ -2,6 +2,7 @@ import type * as babel from '@babel/core';
 import * as t from '@babel/types';
 import { REACT_IMPORTS, TRACKED_IMPORTS } from './constants';
 import type { StateContext } from './types';
+import { shouldBeIgnored } from './utils/ast';
 import {
   isComponentishName,
   isPathValid,
@@ -14,12 +15,11 @@ import { getRootStatementPath } from './utils/get-root-statement-path';
 import { getValidImportDefinition } from './utils/get-valid-import-definition';
 import { isGuaranteedLiteral } from './utils/is-guaranteed-literal';
 import { isJSXComponentElement } from './utils/is-jsx-component-element';
-import { logImprovement } from './utils/log';
 import { isUseClient } from './utils/is-use-client';
+import { logImprovement } from './utils/log';
 import { registerImportDefinition } from './utils/register-import-definition';
 import { unwrapNode } from './utils/unwrap-node';
 import { unwrapPath } from './utils/unwrap-path';
-import { shouldBeIgnored } from './utils/ast';
 
 interface JSXStateContext {
   bailout: boolean;
@@ -205,11 +205,11 @@ function shouldTransform(
       : 0.1;
 
   if (improvement <= threshold) return false;
-  if (!ctx.options.log || ctx.options.log === 'info') {
+  if (ctx.options.log) {
     logImprovement(
       name,
       improvement,
-      true,
+      ctx.options.log === 'info',
       ctx.options.telemetry,
     );
   }

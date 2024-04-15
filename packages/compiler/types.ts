@@ -23,6 +23,7 @@ export interface CompilerOptions {
         threshold?: number;
         // @deprecated
         skip?: (string | RegExp)[];
+        // @deprecated
         rsc?: boolean;
       };
   /**
