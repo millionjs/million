@@ -1,3 +1,4 @@
+import type { NodePath } from '@babel/core';
 import * as t from '@babel/types';
 import {
   bold,
@@ -8,7 +9,6 @@ import {
   underline,
   yellow,
 } from 'kleur/colors';
-import type { NodePath } from '@babel/core';
 import type { MillionTelemetry } from 'packages/telemetry';
 import type { Options } from '../options';
 
@@ -121,11 +121,10 @@ export const logImprovement = (
     event: 'improvement',
     payload: { component, improvement },
   });
-
-  const improvementFormatted = isFinite(improvement)
-    ? (improvement * 100).toFixed(0)
-    : '∞';
   if (stdout) {
+    const improvementFormatted = Number.isFinite(improvement)
+      ? (improvement * 100).toFixed(0)
+      : '∞';
     // eslint-disable-next-line no-console
     console.log(
       `${magenta(' ⚡ ')}${yellow(`<${component}>`)} now renders ${green(

@@ -197,7 +197,7 @@ function shouldTransform(
   const bad = state.components;
   const improvement = (good - bad) / (good + bad);
 
-  if (isNaN(improvement) || !isFinite(improvement)) return false;
+  if (Number.isNaN(improvement) || !Number.isFinite(improvement)) return false;
 
   const threshold =
     typeof ctx.options.auto === 'object' && ctx.options.auto.threshold
@@ -209,8 +209,7 @@ function shouldTransform(
     logImprovement(
       name,
       improvement,
-      // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-      !ctx.options.log || ctx.options.log === 'info',
+      true,
       ctx.options.telemetry,
     );
   }
