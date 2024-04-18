@@ -12,9 +12,9 @@ type Translation = (typeof translations)['en-US'];
 export function useTranslations(): Translation {
   const { locale = 'en-US' } = useRouter();
 
-  if (locale in translations) {
-    return translations[locale];
-  }
+  // if (locale in translations) {
+  //   return translations[locale];
+  // }
 
   // backup locale
   return translations['en-US'];
