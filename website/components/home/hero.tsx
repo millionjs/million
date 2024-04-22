@@ -50,13 +50,13 @@ export function Hero() {
                 {hero.dropIn}
               </span>{' '}
               {hero.forReact}{' '}
-              <Link href="/docs/introduction" className="font-medium hover:underline">
+              <Link href="/docs" className="font-medium hover:underline">
                 {hero.now}
               </Link>
               !
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-y-4 gap-x-6">
-              <Link href="/docs/introduction" className="w-full sm:w-max">
+              <Link href="/docs" className="w-full sm:w-max">
                 <ShimmerButton
                   className="relative w-full sm:w-max flex items-center justify-center transition-all hover:shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset]"
                   background="radial-gradient(ellipse 80% 70% at 50% 120%, #b28ce2, #892fda)"
