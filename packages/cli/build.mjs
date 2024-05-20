@@ -7,7 +7,7 @@ import { replace } from 'esbuild-plugin-replace';
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 const version = JSON.parse(
-  readFileSync(join(__dirname, '../../package.json'), 'utf-8'),
+  readFileSync(join(__dirname, '../../package.json'), 'utf-8')
 ).version;
 
 build({
