@@ -12,9 +12,10 @@ const version = JSON.parse(
 
 build({
   entryPoints: ['src/index.ts'],
-  bundle: true,
+  // bundle: true,
   platform: 'node',
   outfile: 'dist/index.js',
+  format: 'cjs',
   plugins: [
     replace({
       'process.env.VERSION': JSON.stringify(version),

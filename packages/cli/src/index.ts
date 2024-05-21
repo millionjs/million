@@ -2,4 +2,4 @@
 
 import { install } from '@million/install';
 
-install('Million', process.env.VERSION);
+void install('Million', process.env.VERSION);

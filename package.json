@@ -131,6 +131,7 @@
     "@babel/core": "^7.23.7",
     "@babel/types": "^7.23.6",
     "@rollup/pluginutils": "^5.1.0",
+    "@million/install": "latest",
     "kleur": "^4.1.5",
     "undici": "^6.3.0",
     "unplugin": "^1.6.0"

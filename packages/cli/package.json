@@ -3,9 +3,6 @@
   "bin": {
     "million": "./dist/index.js"
   },
-  "dependencies": {
-    "@million/install": "latest"
-  },
   "scripts": {
     "prepare": "node build.mjs",
     "link": "yarn unlink --global && chmod +x dist/index.js && yarn link",
