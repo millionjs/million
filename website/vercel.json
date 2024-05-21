@@ -21,7 +21,7 @@
     },
     {
       "source": "/docs/automatic",
-      "destination": "/docs"
+      "destination": "https://million.dev/docs"
     },
     {
       "source": "/kitchen-sink",
