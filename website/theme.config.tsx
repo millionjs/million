@@ -103,6 +103,7 @@ const config: DocsThemeConfig = {
       </span>
     );
   },
+  logoLink: 'https://million.dev',
   project: {
     link: 'https://github.com/aidenybai/million',
     icon: <GitHubIcon />,
@@ -121,7 +122,7 @@ const config: DocsThemeConfig = {
           <p className="text-base pb-2 text-white font-bold">Resources</p>
           <ul className="flex flex-col gap-2">
             <li>
-              <a href="/docs/introduction" className="text-sm">
+              <a href="https://million.dev/docs" className="text-sm">
                 Documentation
               </a>
             </li>
