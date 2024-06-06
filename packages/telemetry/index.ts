@@ -93,9 +93,9 @@ export class MillionTelemetry {
       project: this.anonymousProjectInfo,
     };
 
-    if (event === 'improvement') {
-      this.showWrapped();
-    }
+    // if (event === 'improvement') {
+    //   this.showWrapped();
+    // }
 
     return post({
       event,
