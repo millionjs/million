@@ -120,7 +120,7 @@ From here, we can see that the `<p>` tag needs to be updated. React will then up
 
 React is slow.
 
-The issue with React's reconciliation it becomes **exponentially slower** the more JSX elements you have. With this simple `App`, it only needs to diff a few elements. In a real world React app, you can easily have hundreds of elements, slowing down interface updates.
+The issue with React's reconciliation is that it becomes **exponentially slower** the more JSX elements you have. With this simple `App`, it only needs to diff a few elements. In a real world React app, you can easily have hundreds of elements, slowing down interface updates.
 
 Million.js solves this by **skipping the diffing step entirely** and directly updating the DOM node.
 
@@ -150,7 +150,7 @@ Notice how when the `count` is updated, Million.js will directly update the DOM 
 
 Looking for the docs? Check the [documentation](https://million.dev) or the [Contributing Guide](https://github.com/aidenybai/million/blob/main/.github/CONTRIBUTING.md) out. We also recommend reading [_Virtual DOM: Back in Block_](https://million.dev/blog/virtual-dom) to learn more about Million.js's internals.
 
-Want to talk to the community? Hop in our [Discord](https://discord.gg/X9yFbcV2rF) and share your ideas and what you've build with Million.js.
+Want to talk to the community? Hop in our [Discord](https://discord.gg/X9yFbcV2rF) and share your ideas and what you've built with Million.js.
 
 Find a bug? Head over to our [issue tracker](https://github.com/aidenybai/million/issues) and we'll do our best to help. We love pull requests, too!
 
