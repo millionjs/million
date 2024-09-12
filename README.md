@@ -32,7 +32,7 @@
 
 ## What is Million.js?
 
-Million.js is an extremely fast and lightweight optimizing compiler that make [components](https://react.dev) up to [_**70% faster**_](https://krausest.github.io/js-framework-benchmark/current.html).
+Million.js is an extremely fast and lightweight optimizing compiler that makes [components](https://react.dev) up to [_**70% faster**_](https://krausest.github.io/js-framework-benchmark/current.html).
 
 > Oh man... Another [`/virtual dom|javascript/gi`](https://regexr.com/6mr5f) framework? I'm fine with [React](https://reactjs.org) already, why do I need this?
 
@@ -50,7 +50,7 @@ The Million.js CLI will automatically install the package and configure your pro
 npx million@latest
 ```
 
-Once your down, just run your project and information should show up in your command line!
+Once you're down, just run your project and information should show up in your command line!
 
 > Having issues installing? [**→ View the installation guide**](https://million.dev/docs/install)
 
