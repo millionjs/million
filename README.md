@@ -52,7 +52,7 @@ npx million@latest
 
 Once your down, just run your project and information should show up in your command line!
 
-> Having issues installing? [**→ View the installation guide**](https://million.dev/docs/install)
+> Having issues installing? [**→ View the installation guide**](https://million.dev/docs)
 
 ## Why Million.js?
 
