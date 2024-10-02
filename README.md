@@ -14,7 +14,7 @@
     <tbody>
       <tr>
         <td>
-          <a href="https://million.dev/docs/introduction">📚 Read the docs</a>
+          <a href="https://million.dev/docs">📚 Read the docs</a>
         </td>
         <td>
           <a href="https://www.youtube.com/watch?v=VkezQMb1DHw">🎦 Watch video</a>
@@ -52,7 +52,7 @@ npx million@latest
 
 Once your down, just run your project and information should show up in your command line!
 
-> Having issues installing? [**→ View the installation guide**](https://million.dev/docs/install)
+> Having issues installing? [**→ View the installation guide**](https://million.dev/docs)
 
 ## Why Million.js?
 
