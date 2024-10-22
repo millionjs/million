@@ -94,7 +94,7 @@ const snapshot = App();
 In order to update the interface to reflect the new state, React needs to compare the previous snapshot to the new snapshot (_called "diffing"_). React's reconciler will go to each element in the previous snapshot and compare it to the new snapshot. If the element is the same, it will skip it. If the element is different, it will update it.
 
 - The `<div>` tag is the same, so it doesn't need to be updated. ✅
-  - The `<p>` tag is the same, so it doesn't needs to be updated. ✅
+  - The `<p>` tag is the same, so it doesn't need to be updated. ✅
     - The text inside the `<p>` tag is different, so it needs to be updated. ⚠ ️
   - The `<button>` tag is the same, so it doesn't need to be updated. ✅
     - The `onClick` prop is the same, so it doesn't need to be updated. ✅
@@ -188,7 +188,7 @@ You can also track our progress through our [Roadmap](https://github.com/users/a
 Million.js takes heavy inspiration from the following projects:
 
 - [`blockdom`](https://github.com/ged-odoo/blockdom) ([Géry Debongnie](https://github.com/ged-odoo))
-  Thank you to Géry pioneering the concept of "blocks" in the virtual DOM. Many parts of the Million.js codebase either directly or indirectly derive from his work.
+  Thank you to Géry for pioneering the concept of "blocks" in the virtual DOM. Many parts of the Million.js codebase either directly or indirectly derive from his work.
 - [`voby`](https://github.com/vobyjs/voby) ([Fabio Spampinato](https://github.com/fabiospampinato))
   The Million.js "template" concept is derived from Voby's `template()` API.
 - [Hack the Wave](https://hackthewave.com) ([Melinda Chang](https://github.com/melindachang)) for their homepage.
