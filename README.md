@@ -52,7 +52,7 @@ npx million@latest
 
 Once your down, just run your project and information should show up in your command line!
 
-> Having issues installing? [**→ View the installation guide**](https://million.dev/docs/install)
+> Having issues installing? [**→ View the installation guide**](https://million.dev/docs)
 
 ## Why Million.js?
 
@@ -120,7 +120,7 @@ From here, we can see that the `<p>` tag needs to be updated. React will then up
 
 React is slow.
 
-The issue with React's reconciliation it becomes **exponentially slower** the more JSX elements you have. With this simple `App`, it only needs to diff a few elements. In a real world React app, you can easily have hundreds of elements, slowing down interface updates.
+The issue with React's reconciliation is that it becomes **exponentially slower** the more JSX elements you have. With this simple `App`, it only needs to diff a few elements. In a real world React app, you can easily have hundreds of elements, slowing down interface updates.
 
 Million.js solves this by **skipping the diffing step entirely** and directly updating the DOM node.
 
